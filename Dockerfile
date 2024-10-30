@@ -12,6 +12,7 @@ RUN apt -y install rustc
 RUN apt-get -y install golang-go
 RUN npm install -g typescript
 RUN apt-get -y install sqlite3
+RUN apt-get install -y --no-install-recommends cron libpq-dev sudo
 
 RUN set -xe && \
     apt-get update && \
